@@ -1,1 +1,1 @@
-# github-tutorial
+Oleg Yamgurov Homework №1
