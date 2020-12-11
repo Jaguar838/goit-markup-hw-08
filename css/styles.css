@@ -242,6 +242,12 @@ p {
 
   color: var(--post-text-color);
 }
+
+.button-filter:focus,
+.button-filter:hover {
+  color: var(--light-color);
+  background-color: var(--accent-color);
+}
 /* Current link  */
 .current {
   color: var(--accent-color);
