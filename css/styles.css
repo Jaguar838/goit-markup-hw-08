@@ -2,13 +2,29 @@
   --light-background-color: #ffffff;
   --dark-background-color: #2f303a;
   --sec-background-color: #f5f4fa;
+
+  --post-text-color: #757575;
+  --title-text-color: #212121;
   --accent-color: #2196f3;
+  --dark-color: #000000;
+  --light-color: #ffffff;
 }
 body {
   font-family: 'Roboto', sans-serif;
 }
+
 a {
   text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  text-align: center;
 }
 
 li {
@@ -16,26 +32,54 @@ li {
 }
 
 h1 {
-  text-align: center;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
 
-  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h4 {
+  color: var(--title-text-color);
 }
 /* Header */
 .head {
   background-color: var(--light-background-color);
 }
 
+.logo-web {
+  color: var(--accent-color);
+}
+
+.head .logo-studio {
+  color: var(--dark-color);
+}
+
+.footer .logo-studio {
+  color: var(--light-color);
+}
+
 .logo a {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
+
   letter-spacing: 0.03em;
-
-  color: #000000;
-}
-
-.logo-color {
-  color: #2196f3;
 }
 
 .nav-link {
@@ -45,19 +89,61 @@ h1 {
 
   letter-spacing: 0.02em;
 
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .nav-link:focus,
 .nav-link:hover {
   color: var(--accent-color);
 }
+
 /* Slider */
 .main-slider {
   background-color: var(--dark-background-color);
 }
 
+.title {
+  color: var(--light-color);
+}
+
+.slider-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  color: var(--light-color);
+  background-color: var(--accent-color);
+}
+
+.slider-button:focus,
+.slider-button:hover {
+  color: var(--primari-white-color);
+}
+
 /* Footer */
 .footer {
   background-color: var(--dark-background-color);
+}
+
+.address-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: var(--light-color);
+}
+
+/* Portfolio project */
+
+/* Current link  */
+.current {
+  color: var(--accent-color);
+}
+
+/* Active button */
+.active {
+  color: var(--light-color);
+  background-color: var(--accent-color);
 }

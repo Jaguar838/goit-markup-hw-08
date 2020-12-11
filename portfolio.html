@@ -9,7 +9,204 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="head">
+      <!-- Logo -->
+      <nav>
+        <div class="logo">
+          <a href="./index.html">
+            <span class="logo-web">Web</span
+            ><span class="logo-studio">Studio</span></a
+          >
+        </div>
+        <ul class="site-nav">
+          <li><a class="nav-link" href="index.html">Студия</a></li>
+          <li>
+            <a class="nav-link current" href="portfolio.html">Портфолио</a>
+          </li>
+          <li><a class="nav-link" href="/">Контакты</a></li>
+        </ul>
+      </nav>
+      <a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
+    </header>
+    <main>
+      <section class="portfolio">
+        <h2 hidden="true">Портфолио</h2>
+        <!-- Buttons filters -->
+        <ul>
+          <li>
+            <button type="button" class="button-filter active">Все</button>
+          </li>
+          <li>
+            <button type="button" class="button-filter">Веб-сайты</button>
+          </li>
+          <li>
+            <button type="button" class="button-filter">Приложения</button>
+          </li>
+          <li><button type="button" class="button-filter">Дизайн</button></li>
+          <li>
+            <button type="button" class="button-filter">Маркетинг</button>
+          </li>
+        </ul>
+        <!-- Articles projects -->
+        <ul>
+          <li>
+            <a class="portfolio-link" href="/">
+              <article class="portfolio-project">
+                <img
+                  src="./images/site-1.png"
+                  alt="на экране ноутбука открыт сайт"
+                />
+                <h4 class="portfolio-title">Технокряк</h4>
+                <p class="portfolio-post">Веб-сайт</p>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a class="portfolio-link" href="/">
+              <article class="portfolio-project">
+                <img
+                  src="./images/site-2.png"
+                  alt="Два баскетболиста"
+                  aria-label="Два баскетболиста"
+                />
+                <h4 class="portfolio-title">
+                  Постер New Orlean vs Golden Star
+                </h4>
+                <p class="portfolio-post">Дизайн</p>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a class="portfolio-link" href="/">
+              <article class="portfolio-project">
+                <img
+                  src="./images/site-3.png"
+                  alt="логотип ресторана"
+                  aria-label="логотип ресторана"
+                />
+                <h4 class="portfolio-title">Ресторан Seafood</h4>
+                <p class="portfolio-post">Додаток</p>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a class="portfolio-link" href="/">
+              <article class="portfolio-project">
+                <img
+                  src="./images/site-4.png"
+                  alt="наушники"
+                  aria-label="наушники"
+                />
+                <h4 class="portfolio-title">Проект Prime</h4>
+                <p class="portfolio-post">Маркетинг</p>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a class="portfolio-link" href="/">
+              <article class="portfolio-project">
+                <img
+                  src="./images/site-5.png"
+                  alt="две картонные коробки"
+                  aria-label="две картонные коробки"
+                />
+                <h4 class="portfolio-title">Проект Boxes</h4>
+                <p class="portfolio-post">Приложение</p>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a class="portfolio-link" href="/">
+              <article class="portfolio-project">
+                <img
+                  src="./images/site-6.png"
+                  alt="монитор"
+                  aria-label="монитор"
+                />
+                <h4 class="portfolio-title">Inspiration has no Borders</h4>
+                <p class="portfolio-post">Веб-сайт</p>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a class="portfolio-link" href="/">
+              <article class="portfolio-project">
+                <img
+                  src="./images/site-7.png"
+                  alt="разворот журнала с иллюстрациями"
+                  aria-label="книга с иллюстрациями"
+                />
+                <h4 class="portfolio-title">Издание Limited Edition</h4>
+                <p class="portfolio-post">Дизайн</p>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a class="portfolio-link" href="/">
+              <article class="portfolio-project">
+                <img
+                  src="./images/site-8.png"
+                  alt="ярлык с надписью Labeltag"
+                  aria-label="ярлык с надписью Labeltag"
+                />
+                <h4 class="portfolio-title">Проект LAB</h4>
+                <p class="portfolio-post">Маркетинг</p>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a class="portfolio-link" href="/">
+              <article class="portfolio-project">
+                <img
+                  src="./images/site-9.png"
+                  alt="ноутбук"
+                  aria-label="ноутбук"
+                />
+                <h4 class="portfolio-title">Growing Business</h4>
+                <p class="portfolio-post">Приложение</p>
+              </article>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="logo">
+        <a href="./index.html">
+          <span class="logo-web">Web</span
+          ><span class="logo-studio">Studio</span>
+        </a>
+      </div>
+      <ul>
+        <li>
+          <address>
+            <a
+              class="address-link"
+              href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=uk"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+          </address>
+        </li>
+        <li>
+          <a class="contact" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
