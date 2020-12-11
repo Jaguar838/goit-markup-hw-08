@@ -9,6 +9,10 @@
   --dark-color: #000000;
   --light-color: #ffffff;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -137,7 +141,7 @@ p {
 
 .slider-button:focus,
 .slider-button:hover {
-  color: var(--primari-white-color);
+  color: var(--accent-color);
 }
 /* Our team  */
 .section-team {
