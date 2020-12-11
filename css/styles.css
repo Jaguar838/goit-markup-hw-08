@@ -28,6 +28,7 @@ address {
 }
 
 button {
+  font-family: inherit;
   cursor: pointer;
   border: none;
   text-align: center;
