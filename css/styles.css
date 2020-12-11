@@ -102,6 +102,22 @@ p {
   color: var(--accent-color);
 }
 
+.contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  letter-spacing: 0.02em;
+}
+
+.head .contact {
+  color: var(--post-text-color);
+}
+
+.footer .contact {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 /* Slider */
 .main-slider {
   background-color: var(--dark-background-color);
