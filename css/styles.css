@@ -102,14 +102,6 @@ p {
   color: var(--accent-color);
 }
 
-.contact {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-
-  letter-spacing: 0.02em;
-}
-
 .head-contact {
   font-weight: 500;
   font-size: 14px;
@@ -177,7 +169,25 @@ p {
 }
 
 /* Portfolio project */
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
 
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
+
+.portfolio-post {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.03em;
+
+  color: var(--post-text-color);
+}
 /* Current link  */
 .current {
   color: var(--accent-color);
