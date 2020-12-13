@@ -1,13 +1,13 @@
 :root {
-  --light-background-color: #ffffff;
-  --dark-background-color: #2f303a;
-  --sec-background-color: #f5f4fa;
+  --light-color: #ffffff;
+  --dark-color: #000000;
+
+  --dark-bgcolor: #2f303a;
+  --light-bgcolor: #f5f4fa;
 
   --post-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --dark-color: #000000;
-  --light-color: #ffffff;
 }
 * {
   margin: 0;
@@ -15,8 +15,9 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
+  font-style: normal;
 
-  background-color: var(--light-background-color);
+  background-color: var(--light-color);
 }
 
 a {
@@ -70,7 +71,7 @@ p {
 }
 /* Header */
 .head {
-  background-color: var(--light-background-color);
+  background-color: var(--light-color);
 }
 
 .logo-web {
@@ -89,12 +90,13 @@ p {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: ;
+  line-height: 1.19;
 
   letter-spacing: 0.03em;
 }
 
-.nav-link {
+.nav-link,
+.head-contact {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -104,29 +106,20 @@ p {
   color: var(--title-text-color);
 }
 
-.nav-link:focus,
-.nav-link:hover {
-  color: var(--accent-color);
-}
-
 .head-contact {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-
-  letter-spacing: 0.02em;
-
   color: var(--post-text-color);
 }
 
+.nav-link:focus,
 .head-contact:focus,
+.nav-link:hover,
 .head-contact:hover {
   color: var(--accent-color);
 }
 
 /* Slider */
 .slider {
-  background-color: var(--dark-background-color);
+  background-color: var(--dark-bgcolor);
 }
 
 .title {
@@ -174,7 +167,7 @@ p {
 }
 /* Our team  */
 .section-team {
-  background-color: var(--sec-background-color);
+  background-color: var(--light-bgcolor);
 }
 .team-title {
   font-weight: 500;
@@ -199,7 +192,7 @@ p {
 }
 /* Footer */
 .footer {
-  background-color: var(--dark-background-color);
+  background-color: var(--dark-bgcolor);
 }
 
 .address-link {
@@ -243,8 +236,8 @@ p {
   color: var(--post-text-color);
 }
 
-.button-filter:focus,
-.button-filter:hover {
+.btn-filter:focus,
+.btn-filter:hover {
   color: var(--light-color);
   background-color: var(--accent-color);
 }
