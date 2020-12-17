@@ -1,7 +1,9 @@
+/* Constans */
 :root {
-  --light-color: #ffffff;
+  --white-color: #ffffff;
   --dark-color: #000000;
 
+  --white-bgcolor: #ffffff;
   --dark-bgcolor: #2f303a;
   --light-bgcolor: #f5f4fa;
 
@@ -9,15 +11,23 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
 }
+
 * {
-  margin: 0;
-  padding: 0;
+  outline: 1px solid tomato;
 }
+
+/* Common  */
+
 body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
 
-  background-color: var(--light-color);
+  background-color: var(--white-color);
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1200px;
 }
 
 a {
@@ -33,10 +43,6 @@ button {
   cursor: pointer;
   border: none;
   text-align: center;
-}
-
-li {
-  list-style: none;
 }
 
 h1 {
@@ -66,12 +72,28 @@ h4 {
   color: var(--title-text-color);
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 p {
   color: var(--post-text-color);
 }
+
 /* Header */
 .head {
-  background-color: var(--light-color);
+  border-bottom: 1px solid #ececec;
+  background-color: var(--white-bgcolor);
+}
+
+.head .logo {
+  margin-right: 92px;
+}
+
+.footer .logo {
+  margin-bottom: 20px;
 }
 
 .logo-web {
@@ -83,7 +105,7 @@ p {
 }
 
 .footer .logo-studio {
-  color: var(--light-color);
+  color: var(--white-color);
 }
 
 .logo-link {
@@ -123,7 +145,7 @@ p {
 }
 
 .title {
-  color: var(--light-color);
+  color: var(--white-color);
 }
 
 .slider-button {
@@ -131,7 +153,7 @@ p {
   font-size: 16px;
   line-height: 1.88;
 
-  color: var(--light-color);
+  color: var(--white-color);
   background-color: var(--accent-color);
 }
 
@@ -192,6 +214,8 @@ p {
 }
 /* Footer */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--dark-bgcolor);
 }
 
@@ -202,7 +226,7 @@ p {
 
   letter-spacing: 0.03em;
 
-  color: var(--light-color);
+  color: var(--white-color);
 }
 
 .footer-contact {
@@ -213,6 +237,11 @@ p {
   letter-spacing: 0.02em;
 
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address,
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* Portfolio project */
@@ -238,7 +267,7 @@ p {
 
 .btn-filter:focus,
 .btn-filter:hover {
-  color: var(--light-color);
+  color: var(--white-color);
   background-color: var(--accent-color);
 }
 /* Current link  */
@@ -248,6 +277,15 @@ p {
 
 /* Active button */
 .active {
-  color: var(--light-color);
+  color: var(--white-color);
   background-color: var(--accent-color);
+}
+
+/* Hidden element  */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
