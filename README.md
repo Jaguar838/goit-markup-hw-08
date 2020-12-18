@@ -1,2 +1,1 @@
-﻿Homework №2
-Оформление цвета и текста на размеченных страницах.
+﻿Homework №3 margin padding flex
