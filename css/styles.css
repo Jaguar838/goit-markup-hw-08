@@ -137,7 +137,6 @@ p {
 }
 
 .header-contact {
-  padding: 32px auto;
   color: var(--post-text-color);
 }
 
@@ -195,7 +194,7 @@ p {
 }
 
 .plus-item {
-  width: calc((100%-90px) / 4);
+  width: calc((1170px - 90px) / 4);
 }
 
 .plus-item:not(:nth-child(4n)) {
