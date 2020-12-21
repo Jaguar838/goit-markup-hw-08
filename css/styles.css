@@ -160,6 +160,7 @@ p {
 .slider {
   padding: 200px 0;
   background-color: var(--dark-bgcolor);
+  text-align: center;
 }
 
 .title {
@@ -222,6 +223,7 @@ p {
 }
 /* Section services */
 .section-services {
+  padding-bottom: 94px;
 }
 
 .services-list {
