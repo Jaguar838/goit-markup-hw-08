@@ -1,3 +1,6 @@
+/* -------------------------------------------
+                 WebStudio
+------------------------------------------- */
 /* Constans */
 :root {
   --white-color: #ffffff;
@@ -156,8 +159,8 @@ p {
   margin-left: auto;
 }
 
-/* Slider */
-.slider {
+/* Hero */
+.hero {
   padding: 200px 0;
   background-color: var(--dark-bgcolor);
   text-align: center;
@@ -168,7 +171,7 @@ p {
   color: var(--white-color);
 }
 
-.btn-slider {
+.btn-hero {
   display: block;
   margin: 0 auto;
   padding: 10px 32px;
@@ -183,8 +186,8 @@ p {
   background-color: var(--accent-color);
 }
 
-.btn-slider:focus,
-.btn-slider:hover {
+.btn-hero:focus,
+.btn-hero:hover {
   background-color: var(--accent-btn-color);
 }
 
