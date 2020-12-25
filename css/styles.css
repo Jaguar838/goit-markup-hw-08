@@ -5,6 +5,7 @@
 :root {
   --white-color: #ffffff;
   --dark-color: #000000;
+  --icon-color: #afb1b8;
 
   --white-bgcolor: #ffffff;
   --dark-bgcolor: #2f303a;
@@ -161,8 +162,27 @@ p {
 
 /* Hero */
 .hero {
+  background-color: var(--white-bgcolor);
+  text-align: center;
+}
+
+.hero-overlay {
+  max-width: 1600px;
+  margin: 0 auto;
   padding: 200px 0;
-  background-color: var(--dark-bgcolor);
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-position: center;
+}
+
+.hero-title-container {
+  width: 696px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -232,6 +252,47 @@ p {
 .services-list {
   justify-content: space-between;
 }
+
+/* Clients */
+.section-client {
+  padding: 94px 0;
+  background-color: var(--white-bgcolor);
+}
+
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.client-link {
+  display: block;
+}
+
+.client-logo {
+  fill: var(--icon-color);
+}
+
+.client-item:focus,
+.client-item:hover {
+  border-color: var(--accent-color);
+}
+
+.client-logo:focus,
+.client-logo:hover {
+  fill: var(--accent-color);
+}
+
 /* Our team  */
 .section-team {
   padding: 94px 0;
@@ -373,19 +434,28 @@ p {
   margin-bottom: 30px;
 
   background-color: var(--white-bgcolor);
-  border: 1px solid #eeeeee;
 }
 
 .portfolio-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
-.portfolio-item > img {
+.portfolio-link,
+.portfolio-link > img {
   display: block;
+}
+
+.portfolio-link:focus,
+.portfolio-link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-article {
   padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .portfolio-title {
   margin: 0;
