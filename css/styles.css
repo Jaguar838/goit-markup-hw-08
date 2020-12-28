@@ -16,10 +16,6 @@
   --accent-color: #2196f3;
   --accent-btn-color: #188ce8;
 }
-/* Test maketa */
-/* * {
-  outline: 1px solid tomato;
-} */
 
 /* Common  */
 
@@ -115,6 +111,12 @@ p {
   width: 44px;
   height: 44px;
   border-radius: 44px;
+  color: var(--icon-color);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* Header */
@@ -163,13 +165,6 @@ p {
   color: var(--post-text-color);
 }
 
-.nav-link:focus,
-.header-contact:focus,
-.nav-link:hover,
-.header-contact:hover {
-  color: var(--accent-color);
-}
-
 .nav-list > .nav-item:not(:last-child),
 .header-contacts > .header-contact:not(:last-child) {
   margin-right: 50px;
@@ -182,6 +177,13 @@ p {
 .header-icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.nav-link:focus,
+.header-contact:focus,
+.nav-link:hover,
+.header-contact:hover {
+  color: var(--accent-color);
 }
 
 /* Hero */
@@ -202,6 +204,8 @@ p {
     ),
     url(../images/hero.jpg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-title-container {
@@ -341,11 +345,11 @@ p {
 }
 
 .team-item .icon {
-  fill: var(--icon-color);
+  fill: currentColor;
 }
-.team-item .icon:focus,
-.team-item .icon:hover {
-  fill: var(--white-color);
+.social-link:focus,
+.social-link:hover {
+  color: var(--white-color);
 }
 /* Clients */
 .section-client {
@@ -362,7 +366,7 @@ p {
 }
 
 .client-link {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 170px;
@@ -370,17 +374,17 @@ p {
 
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+
+  color: var(--icon-color);
 }
 
 .client-logo {
-  fill: var(--icon-color);
+  fill: currentColor;
 }
 
 .client-link:focus,
-.client-link:hover,
-.client-logo:focus,
-.client-logo:hover {
-  fill: var(--accent-color);
+.client-link:hover {
+  color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
@@ -451,13 +455,16 @@ p {
 
 .footer-socials .social-link {
   background: rgba(255, 255, 255, 0.1);
+  color: var(--white-color);
 }
+
+.footer-socials .icon {
+  fill: currentColor;
+}
+
 .social-link:focus,
 .social-link:hover {
   background-color: var(--accent-color);
-}
-.footer-socials .icon {
-  fill: var(--white-color);
 }
 
 /* .footer-address,
@@ -581,3 +588,8 @@ p {
   height: 1px;
   margin: -1px;
 }
+
+/* Test maketa */
+/* * {
+  outline: 1px solid tomato;
+} */
