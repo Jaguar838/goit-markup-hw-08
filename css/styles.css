@@ -1,6 +1,6 @@
-/* -------------------------------------------
+/* ---------------------------------
                  WebStudio
-------------------------------------------- */
+------------------------------------ */
 /* Constans */
 :root {
   --white-color: #ffffff;
@@ -75,9 +75,9 @@ h3 {
   text-transform: uppercase;
 }
 
-h4 {
+/* h4 {
   color: var(--title-text-color);
-}
+} */
 
 ul {
   margin: 0;
@@ -96,6 +96,7 @@ p {
 .social-list {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .social-item:not(:last-child) {
@@ -325,6 +326,7 @@ p {
   line-height: 1.19;
 
   text-align: center;
+  text-transform: unset;
   letter-spacing: 0.03em;
 
   color: var(--title-text-color);
@@ -516,7 +518,7 @@ p {
   flex-wrap: wrap;
 }
 .portfolio-item {
-  width: 370px;
+  flex-basis: calc(100% / 4 - 30px);
   margin-bottom: 30px;
 
   background-color: var(--white-bgcolor);
@@ -570,6 +572,14 @@ p {
 /* Current link  */
 .current {
   color: var(--accent-color);
+}
+.current::before {
+  content: '';
+  display: inline-block;
+  width: 48px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
 }
 
 /* Active button */
