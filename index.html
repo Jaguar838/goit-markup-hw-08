@@ -67,7 +67,7 @@
             <h1 class="title">Эффективные решения для вашего бизнеса</h1>
           </div>
           <!-- Кнопка на модальное окно -->
-          <button class="btn-hero" type="button">Заказать услугу</button>
+          <button class="btn-hero" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- Наши преимущества -->
@@ -431,6 +431,17 @@
         </div>
       </div>
     </footer>
+    <!-- Modal -->
+    <div class="modal-backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-modal-close" data-modal-close>
+          <svg class="icon-modal-close">
+            <use href="./images/icons-min.svg#modal-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
 <!-- End WebStudio -->
