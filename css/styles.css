@@ -16,7 +16,7 @@
   --accent-color: #2196f3;
   --accent-btn-color: #188ce8;
   --animation-duration: 250ms;
-  --animation-type: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Common  */
@@ -115,6 +115,10 @@ p {
   height: 44px;
   border-radius: 44px;
   color: var(--icon-color);
+
+  transition-property: color, background-color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-function);
 }
 
 .icon {
@@ -194,6 +198,28 @@ p {
   color: var(--accent-color);
 }
 
+.nav-link,
+.header-contact {
+  transition-property: color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-function);
+}
+
+/* Current link  */
+.current {
+  color: var(--accent-color);
+}
+.current::before {
+  position: absolute;
+  bottom: 0;
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
 /* Hero */
 .hero {
   background-color: var(--white-bgcolor);
@@ -240,6 +266,10 @@ p {
 
   color: var(--white-color);
   background-color: var(--accent-color);
+
+  transition-property: background-color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-function);
 }
 
 .btn-hero:focus,
@@ -248,6 +278,7 @@ p {
 }
 
 /* Section plus */
+
 .section-plus {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -272,8 +303,6 @@ p {
 
   background-color: var(--light-bgcolor);
   border-radius: 4px;
-}
-.plus-list {
 }
 
 .plus-title {
@@ -304,9 +333,16 @@ p {
   justify-content: space-between;
 }
 
+.services-item {
+  position: relative;
+}
+
 .services-div {
   position: absolute;
   bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 70px;
 
@@ -379,6 +415,7 @@ p {
 .social-link:hover {
   color: var(--white-color);
 }
+
 /* Clients */
 .section-client {
   padding: 94px 0;
@@ -388,9 +425,6 @@ p {
 .client-list {
   display: flex;
   justify-content: space-between;
-}
-
-.client-item {
 }
 
 .client-link {
@@ -404,6 +438,10 @@ p {
   border-radius: 4px;
 
   color: var(--icon-color);
+
+  transition-property: border-color, color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-function);
 }
 
 .client-logo {
@@ -529,6 +567,10 @@ p {
 
   color: var(--title-text-color);
   background-color: var(--light-bgcolor);
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-function);
 }
 
 .btn-filter:focus,
@@ -578,7 +620,7 @@ p {
   font-size: 18px;
   line-height: 2;
 
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
 
   color: var(--title-text-color);
 }
@@ -594,20 +636,42 @@ p {
 
   color: var(--post-text-color);
 }
+/* Portfolio animate */
 
-/* Current link  */
-.current {
-  color: var(--accent-color);
+.img-thumb {
+  position: relative;
+  overflow: hidden;
 }
-.current::before {
+
+.img-thumb-animated {
   position: absolute;
   bottom: 0;
-  content: '';
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
+  height: 100%;
+  padding: 24px;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition-property: box-shadow, transform;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-function);
+}
+
+.thumb-description {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.56;
+
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
+.portfolio-link:hover .img-thumb-animated {
+  transform: translateY(0);
 }
 
 /* Active button */
@@ -627,13 +691,13 @@ p {
   margin: -1px;
 }
 
+/* Modal */
+
 .is-hidden {
-  /* visibility: hidden; */
   opacity: 0;
   pointer-events: none;
   transform: scale(0);
 }
-/* Modal */
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -644,7 +708,7 @@ p {
 
   transition-property: opacity, transform;
   transition-duration: 1000ms;
-  transition-timing-function: var(--animation-type);
+  transition-timing-function: var(--animation-function);
 }
 
 .modal {
@@ -672,6 +736,10 @@ p {
   background-color: var(--white-bgcolor);
   border-radius: 50%;
   color: var(--dark-color);
+
+  transition-property: color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-function);
 }
 .btn-modal-close:focus,
 .btn-modal-close:hover {
