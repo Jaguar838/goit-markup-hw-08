@@ -1,7 +1,9 @@
-/* ---------------------------------
-                 WebStudio
------------------------------------- */
+/* --------------------------
+          WebStudio
+-------------------------- */
+
 /* Constans */
+
 :root {
   --white-color: #ffffff;
   --dark-color: #000000;
@@ -15,6 +17,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --accent-btn-color: #188ce8;
+
   --animation-duration: 250ms;
   --animation-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -26,16 +29,6 @@ body {
   font-style: normal;
 
   background-color: var(--white-color);
-}
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  width: 1200px;
-}
-
-.center {
-  display: flex;
-  align-items: center;
 }
 
 a {
@@ -52,6 +45,17 @@ button {
   cursor: pointer;
   border: none;
   text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1200px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
 }
 
 h1 {
@@ -77,18 +81,14 @@ h3 {
   text-transform: uppercase;
 }
 
-/* h4 {
-  color: var(--title-text-color);
-} */
+p {
+  color: var(--post-text-color);
+}
 
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-p {
-  color: var(--post-text-color);
 }
 
 .section-heading {
@@ -126,11 +126,19 @@ p {
   height: 20px;
 }
 
+/* Hidden element  */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 /* Header */
 .header {
   position: sticky;
   top: 0;
-  /* z-index: 1; */
 
   border-bottom: 1px solid #ececec;
   background-color: var(--white-bgcolor);
@@ -686,15 +694,6 @@ p {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--white-color);
   background-color: var(--accent-color);
-}
-
-/* Hidden element  */
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
 }
 
 /* Modal */
