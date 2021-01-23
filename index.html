@@ -406,7 +406,7 @@
           </a>
         </div>
         <div class="footer-socials">
-          <p class="socials-title">Присоединяйтесь</p>
+          <p class="footer-title">Присоединяйтесь</p>
           <ul class="social-list">
             <li class="social-item">
               <a href="#" class="social-link" title="Instagram">
@@ -438,15 +438,31 @@
             </li>
           </ul>
         </div>
-        <form action="">
-          <p class="socials-title">Подпишитесь на рассылку</p>
-          <button class="btn-modal" type="submit">
-            Подписаться
-            <svg class="icon-send">
-              <use href="./images/icons-min.svg#icon-send"></use>
-          </svg>
-          </button>
-        </form>
+        <div class="footer-subscribtion">
+          <form class="footer-subscribe__form">
+            <label
+              class="subscribtion-label footer-title"
+              for="subscribe__input"
+              >Подпишитесь на рассылку</label
+            >
+            <div class="footer-subscribe__input-submit-block">
+              <input
+                class="footer-subscribe__input"
+                type="email"
+                name="subscribe_email"
+                id="subscribe__input"
+                placeholder="E-mail"
+                required=""
+              />
+              <button class="btn-subscribe" type="submit">
+                Подписаться
+                <svg class="icon-send">
+                  <use href="./images/icons-min.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- Modal -->
@@ -458,14 +474,10 @@
           </svg>
         </button>
         <form action="">
-          <p class="form-heading">
-            Оставьте свои данные, мы вам перезвоним
-          </p>
+          <p class="form-heading">Оставьте свои данные, мы вам перезвоним</p>
           Соглашаюсь с рассылкой и принимаю
           <a href="#">Условия договора</a>
-          <button class="btn-modal" type="submit">
-            Отправить
-          </button>
+          <button class="btn-modal" type="submit">Отправить</button>
         </form>
       </div>
     </div>
