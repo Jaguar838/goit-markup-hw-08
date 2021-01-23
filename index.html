@@ -439,20 +439,19 @@
           </ul>
         </div>
         <div class="footer-subscribtion">
-          <form class="footer-subscribe__form">
+          <form class="subscribe-form">
             <label
-              class="subscribtion-label footer-title"
+              class="subscribe-label footer-title"
               for="subscribe__input"
               >Подпишитесь на рассылку</label
             >
-            <div class="footer-subscribe__input-submit-block">
+            <div class="subscribe_input_btn-block">
               <input
-                class="footer-subscribe__input"
+                class="subscribe-input"
                 type="email"
                 name="subscribe_email"
                 id="subscribe__input"
                 placeholder="E-mail"
-                required=""
               />
               <button class="btn-subscribe" type="submit">
                 Подписаться
@@ -473,10 +472,22 @@
             <use href="./images/icons-min.svg#modal-close"></use>
           </svg>
         </button>
-        <form action="">
+        <form>
           <p class="form-heading">Оставьте свои данные, мы вам перезвоним</p>
-          Соглашаюсь с рассылкой и принимаю
-          <a href="#">Условия договора</a>
+          <div class="chekbox">
+            <label>
+              <input type="checkbox" name="agree" class="old-checkbox visually-hidden" />
+              <div class="text">
+                Соглашаюсь с рассылкой и принимаю
+                <a href="#">Условия договора</a>
+              </div>
+              <div class="checkbox-icon">
+                <svg class="icon-check">
+                  <use href="./images/icons-min.svg#icon-check"></use>
+              </svg>
+              </div>
+            </label>
+          </div>
           <button class="btn-modal" type="submit">Отправить</button>
         </form>
       </div>

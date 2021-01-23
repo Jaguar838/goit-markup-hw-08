@@ -144,7 +144,7 @@ ul {
 .header {
   position: sticky;
   top: 0;
-
+  z-index: 1;
   border-bottom: 1px solid #ececec;
   background-color: var(--white-bgcolor);
 }
@@ -540,10 +540,45 @@ ul {
   background-color: var(--accent-color);
 }
 
-.footer-subscribe__input:placeholder-shown {
+.subscribe-label.footer-title {
+  display: block;
+}
+
+.subscribe_input_btn-block {
+display: flex;
+}
+
+.subscribe-input {
+  display: inline-block;
+  width: 358px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  
+
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   letter-spacing: 0.03em;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: none;
+
+  color: var(--white-color);
+  background-color: var(--dark-bgcolor);
+
+  transition-property: border-color;
+  transition-duration: var(--animation-duration);
+  transition-timing-function: var(--animation-function);
+
+}
+
+.subscribe-input:focus,
+.subscribe-input:hover { 
+  border-color: var(--accent-color);
+}
+
+.subscribe-input:placeholder-shown {
+
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -739,6 +774,7 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
@@ -752,7 +788,7 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 1;
+  
   transform: translate(-50%, -50%);
   min-width: 528px;
   min-height: 581px;
@@ -796,7 +832,7 @@ ul {
   fill: currentColor;
 }
 
-form>a {
+.text a {
   text-decoration: underline;
 }
 
