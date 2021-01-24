@@ -942,24 +942,27 @@ ul {
   display: block;
   width: 16px;
   height: 15px;
-  background-image: url(../images/checkbox.svg);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='15' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14.222 1.667v11.666H1.778V1.667h12.444zm0-1.667H1.778C.8 0 0 .75 0 1.667v11.666C0 14.25.8 15 1.778 15h12.444C15.2 15 16 14.25 16 13.333V1.667C16 .75 15.2 0 14.222 0z' fill='%23212121'/%3e%3c/svg%3e");
 
   transition-property: background-image, background-color;
   transition-duration: var(--animation-duration);
   transition-timing-function: var(--animation-function);
 }
 .modal-form-checkbox:hover::before {
-  background-image: url(../images/checkbox-focus.svg);
+  fill: var(--accent-color);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='15' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14.222 1.667v11.666H1.778V1.667h12.444zm0-1.667H1.778C.8 0 0 .75 0 1.667v11.666C0 14.25.8 15 1.778 15h12.444C15.2 15 16 14.25 16 13.333V1.667C16 .75 15.2 0 14.222 0z' fill='%232196F3'/%3e%3c/svg%3e");
+
 }
 .old-checkbox:focus + .modal-form-checkbox::before {
-  background-image: url(../images/checkbox-focus.svg);
+  fill: var(--accent-color);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='15' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14.222 1.667v11.666H1.778V1.667h12.444zm0-1.667H1.778C.8 0 0 .75 0 1.667v11.666C0 14.25.8 15 1.778 15h12.444C15.2 15 16 14.25 16 13.333V1.667C16 .75 15.2 0 14.222 0z' fill='%232196F3'/%3e%3c/svg%3e");
 }
 .old-checkbox:checked + .modal-form-checkbox::before {
   width: 16px;
   height: 16px;
   border-color: transparent;
   background-color: var(--accent-color);
-  background-image: url(../images/check-agreement.svg);
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M3.957 7.752l-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422z' fill='%23fff' stroke='%23fff' stroke-width='.2'/%3e%3c/svg%3e");
   background-size: contain;
   background-origin: border-box;
   
