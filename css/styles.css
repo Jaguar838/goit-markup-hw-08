@@ -142,9 +142,10 @@ ul {
 
 /* Header */
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1;
+  width: 100%;
   border-bottom: 1px solid #ececec;
   background-color: var(--white-bgcolor);
 }
@@ -845,6 +846,8 @@ ul {
 }
 
 .form-heading {
+  margin-top: 0;
+  
   font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
