@@ -52,6 +52,10 @@ button {
   text-align: center;
 }
 
+input, label {
+  cursor: pointer;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -859,8 +863,6 @@ ul {
 
 .form-label {
   display: block;
-  margin-bottom: 10px;
-  cursor: pointer;
 }
 
 .form-text {
@@ -896,6 +898,10 @@ ul {
 .modal-input:focus + .icon-modal-input {
   fill: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+.input-wrapp {
+  margin-bottom: 10px;
 }
 
 .form-textarea {

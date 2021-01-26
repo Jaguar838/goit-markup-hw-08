@@ -455,6 +455,7 @@
                 name="email"
                 id="subscribe__input"
                 placeholder="E-mail"
+                required
               />
               <button class="btn-subscribe" type="submit">
                 Подписаться
@@ -475,35 +476,37 @@
             <use href="./images/icons-min.svg#modal-close"></use>
           </svg>
         </button>
-        <form class="modal-form" action="#">
+        <form action="#" class="modal-form">
           <p class="form-heading">Оставьте свои данные, мы вам перезвоним</p>
-          <label class="form-label">
+          <label class="form-label" for="login">
             <span class="form-text">Имя</span>
+          </label>
             <div class="input-wrapp">
-              <input class="modal-input" type="text" name="login"/>
+              <input class="modal-input" type="text" name="login" id="login" required/>
               <svg class="icon-modal-input" width="12" height="12">
                 <use href="./images/icons-min.svg#icon-modal-person"></use>
             </svg>
             </div>
-          </label>
-          <label class="form-label">
+          
+          <label class="form-label" for="tel">
             <span class="form-text">Телефон</span>
+          </label>
             <div class="input-wrapp">
-              <input class="modal-input" type="tel" name="tel"/>
+              <input class="modal-input" type="tel" name="tel" id="tel" required/>
               <svg class="icon-modal-input" width="13" height="13">
                 <use href="./images/icons-min.svg#icon-modal-phone"></use>
             </svg>
             </div>
-          </label>
-          <label class="form-label">
+          <label class="form-label" for="email">
             <span class="form-text">Почта</span>
+          </label>
             <div class="input-wrapp">
-              <input class="modal-input" type="email" name="email"/>
+              <input class="modal-input" type="email" name="email" id="email" required/>
               <svg class="icon-modal-input" width="15" height="12">
                 <use href="./images/icons-min.svg#icon-modal-email"></use>
             </svg>
             </div>
-          </label>
+
           <label for="id-comment"><span class="form-text">Комментарий</span></label>
           <textarea class="form-textarea" name="comment" id="id-comment" placeholder="Введите текст"></textarea>
           
