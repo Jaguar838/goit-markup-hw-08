@@ -125,9 +125,7 @@ ul {
   border-radius: 44px;
   color: var(--icon-color);
 
-  transition-property: color, background-color;
-  transition-duration: var(--animation-duration);
-  transition-timing-function: var(--animation-function);
+  transition: color, background-color var(--animation-duration) var(--animation-function);
 }
 
 .icon {
@@ -218,9 +216,7 @@ ul {
 
 .nav-link,
 .header-contact {
-  transition-property: color;
-  transition-duration: var(--animation-duration);
-  transition-timing-function: var(--animation-function);
+  transition: color var(--animation-duration) var(--animation-function);
 }
 
 /* Current link  */
@@ -280,9 +276,7 @@ ul {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  transition-property: background-color;
-  transition-duration: var(--animation-duration);
-  transition-timing-function: var(--animation-function);
+  transition: background-color var(--animation-duration) var(--animation-function);
 }
 
 /* Section plus */
@@ -451,9 +445,7 @@ ul {
 
   color: var(--icon-color);
 
-  transition-property: border-color, color;
-  transition-duration: var(--animation-duration);
-  transition-timing-function: var(--animation-function);
+  transition: border-color, color var(--animation-duration) var(--animation-function);
 }
 
 .client-logo {
@@ -570,9 +562,7 @@ ul {
   color: var(--white-color);
   background-color: var(--dark-bgcolor);
 
-  transition-property: border-color;
-  transition-duration: var(--animation-duration);
-  transition-timing-function: var(--animation-function);
+  transition: border-color var(--animation-duration) var(--animation-function);
 }
 
 .subscribe-input:focus,
@@ -604,9 +594,7 @@ ul {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  transition-property: background-color;
-  transition-duration: var(--animation-duration);
-  transition-timing-function: var(--animation-function);
+  transition: background-color var(--animation-duration) var(--animation-function);
 }
 
 .btn-hero:focus,
@@ -648,9 +636,7 @@ ul {
   color: var(--title-text-color);
   background-color: var(--light-bgcolor);
 
-  transition-property: color, background-color, box-shadow;
-  transition-duration: var(--animation-duration);
-  transition-timing-function: var(--animation-function);
+  transition: color, background-color, box-shadow var(--animation-duration) var(--animation-function);
 }
 
 .btn-filter:focus,
@@ -737,9 +723,7 @@ ul {
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
-  transition-property: box-shadow, transform;
-  transition-duration: var(--animation-duration);
-  transition-timing-function: var(--animation-function);
+  transition: box-shadow, transform var(--animation-duration) var(--animation-function);
 }
 
 .thumb-description {
@@ -781,9 +765,7 @@ ul {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
 
-  transition-property: opacity, transform;
-  transition-duration: 1000ms;
-  transition-timing-function: var(--animation-function);
+  transition: opacity, transform 500ms var(--animation-function);
 }
 
 .modal {
@@ -822,9 +804,7 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  transition-property: color;
-  transition-duration: var(--animation-duration);
-  transition-timing-function: var(--animation-function);
+  transition: color var(--animation-duration) var(--animation-function);
 }
 
 .btn-modal-close:focus,
@@ -889,9 +869,7 @@ ul {
   outline: none;
 
 
-  transition-property: border-color;
-  transition-duration: var(--animation-duration);
-  transition-timing-function: var(--animation-function);
+  transition: border-color var(--animation-duration) var(--animation-function);
 }
 
 .modal-input:focus,
@@ -953,9 +931,7 @@ ul {
   height: 15px;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='15' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14.222 1.667v11.666H1.778V1.667h12.444zm0-1.667H1.778C.8 0 0 .75 0 1.667v11.666C0 14.25.8 15 1.778 15h12.444C15.2 15 16 14.25 16 13.333V1.667C16 .75 15.2 0 14.222 0z' fill='%23212121'/%3e%3c/svg%3e");
 
-  transition-property: background-image, background-color;
-  transition-duration: var(--animation-duration);
-  transition-timing-function: var(--animation-function);
+  transition: background-image, background-color var(--animation-duration) var(--animation-function);
 }
 .modal-form-checkbox:hover::before {
   fill: var(--accent-color);
@@ -975,9 +951,7 @@ ul {
   background-size: contain;
   background-origin: border-box;
   
-  transition-property: fill;
-  transition-duration: var(--animation-duration);
-  transition-timing-function: var(--animation-function);
+  transition: fill var(--animation-duration) var(--animation-function);
 }
 
 .btn-modal {
@@ -989,9 +963,7 @@ ul {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  transition-property: background-color, box-shadow;
-  transition-duration: var(--animation-duration);
-  transition-timing-function: var(--animation-function);
+  transition: background-color, box-shadow var(--animation-duration) var(--animation-function);
 }
 
 .btn-modal:focus,
