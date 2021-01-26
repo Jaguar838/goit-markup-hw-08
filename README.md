@@ -1,1 +1,1 @@
-Homework №6 Forms and styles
+Homework №7 Проведи рефакторинг CSS-кода проекта и перенеси всё на препроцессор SASS
