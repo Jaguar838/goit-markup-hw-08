@@ -5,11 +5,14 @@
 /* Constans */
 
 :root {
-  --white-color: #ffffff;
+  --main-font: 'Roboto', sans-serif;
+  --second-font: 'Raleway', sans-serif;
+
+  --main-color: #ffffff;
   --dark-color: #000000;
   --icon-color: #afb1b8;
 
-  --white-bgcolor: #ffffff;
+  --main-bgcolor: #ffffff;
   --dark-bgcolor: #2f303a;
   --light-bgcolor: #f5f4fa;
 
@@ -27,10 +30,10 @@
 /* Common  */
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--main-font);
   font-style: normal;
 
-  background-color: var(--white-color);
+  background-color: var(--main-bgcolor);
 }
 
 a {
@@ -151,7 +154,7 @@ ul {
   z-index: 1;
   width: 100%;
   border-bottom: 1px solid #ececec;
-  background-color: var(--white-bgcolor);
+  background-color: var(--main-bgcolor);
 }
 
 .header .logo {
@@ -167,7 +170,7 @@ ul {
 }
 
 .logo-link {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--second-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -238,7 +241,7 @@ ul {
 
 /* Hero */
 .hero {
-  background-color: var(--white-bgcolor);
+  background-color: var(--main-bgcolor);
   text-align: center;
 }
 
@@ -266,7 +269,7 @@ ul {
 
 .title {
   margin: 0 auto 35px;
-  color: var(--white-color);
+  color: var(--main-color);
 }
 
 .btn-hero {
@@ -274,7 +277,7 @@ ul {
   margin: 0 auto;
   padding: 10px 32px;
 
-  color: var(--white-color);
+  color: var(--main-color);
   background-color: var(--accent-color);
   box-shadow: var(--shadow-btn);
 
@@ -364,7 +367,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: var(--white-color);
+  color: var(--main-color);
 }
 
 /* Our team  */
@@ -382,7 +385,7 @@ ul {
   width: 270px;
   padding-bottom: 30px;
 
-  background-color: var(--white-bgcolor);
+  background-color: var(--main-bgcolor);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -421,13 +424,13 @@ ul {
 }
 .social-link:focus,
 .social-link:hover {
-  color: var(--white-color);
+  color: var(--main-color);
 }
 
 /* Clients */
 .section-client {
   padding: 94px 0;
-  background-color: var(--white-bgcolor);
+  background-color: var(--main-bgcolor);
 }
 
 .client-list {
@@ -480,7 +483,7 @@ ul {
 }
 
 .footer .logo-studio {
-  color: var(--white-color);
+  color: var(--main-color);
 }
 
 .address-link {
@@ -493,7 +496,7 @@ ul {
 
   letter-spacing: 0.03em;
 
-  color: var(--white-color);
+  color: var(--main-color);
 }
 
 .footer-contact {
@@ -522,12 +525,12 @@ ul {
 
   letter-spacing: 0.03em;
 
-  color: var(--white-color);
+  color: var(--main-color);
 }
 
 .footer-socials .social-link {
   background: rgba(255, 255, 255, 0.1);
-  color: var(--white-color);
+  color: var(--main-color);
 }
 
 .footer-socials .icon {
@@ -561,7 +564,7 @@ ul {
   border-radius: 4px;
   outline: none;
 
-  color: var(--white-color);
+  color: var(--main-color);
   background-color: var(--dark-bgcolor);
 
   transition: border-color var(--animation-type);
@@ -591,7 +594,7 @@ ul {
   width: 200px;
   height: 50px;
 
-  color: var(--white-color);
+  color: var(--main-color);
   background-color: var(--accent-color);
 
   box-shadow: var(--shadow-btn);
@@ -641,7 +644,7 @@ ul {
 .btn-filter:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  color: var(--white-color);
+  color: var(--main-color);
   background-color: var(--accent-color);
 }
 
@@ -653,7 +656,7 @@ ul {
   flex-basis: calc(100% / 4 - 30px);
   margin-bottom: 30px;
 
-  background-color: var(--white-bgcolor);
+  background-color: var(--main-bgcolor);
 }
 
 .portfolio-item:not(:nth-child(3n)) {
@@ -729,7 +732,7 @@ ul {
   line-height: 1.56;
 
   letter-spacing: 0.03em;
-  color: var(--white-color);
+  color: var(--main-color);
 }
 
 .portfolio-link:focus .img-thumb-animated,
@@ -741,7 +744,7 @@ ul {
 .active {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  color: var(--white-color);
+  color: var(--main-color);
   background-color: var(--accent-color);
 }
 
@@ -777,7 +780,7 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  background: var(--white-bgcolor);
+  background: var(--main-bgcolor);
 }
 
 .modal-form {
@@ -797,7 +800,7 @@ ul {
   height: 30px;
 
   color: var(--dark-color);
-  background-color: var(--white-bgcolor);
+  background-color: var(--main-bgcolor);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
@@ -956,7 +959,7 @@ ul {
   margin: 30px auto 0;
   padding: 10px 55px;
 
-  color: var(--white-color);
+  color: var(--main-color);
   background-color: var(--accent-color);
   box-shadow: var(--shadow-btn);
 
