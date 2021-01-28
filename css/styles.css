@@ -932,7 +932,7 @@ ul {
   border: solid 2px var(--title-text-color);
   border-radius: 2px;
   transform: translateY(-50%);
-  transition: background-color var(--animation-type);
+  transition: background-color, border-color var(--animation-type);
 }
 .modal-form-checkbox:hover::before {
   border: solid 2px var(--accent-color);
