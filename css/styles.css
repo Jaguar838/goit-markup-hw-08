@@ -924,14 +924,15 @@ ul {
   position: absolute;
   top: 50%;
   left: 12px;
-  transform: translateY(-50%);
+  
   content: '';
   display: block;
   width: 16px;
   height: 15px;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='15' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M14.222 1.667v11.666H1.778V1.667h12.444zm0-1.667H1.778C.8 0 0 .75 0 1.667v11.666C0 14.25.8 15 1.778 15h12.444C15.2 15 16 14.25 16 13.333V1.667C16 .75 15.2 0 14.222 0z' fill='%23212121'/%3e%3c/svg%3e");
-
-  transition: background-image, background-color var(--animation-type);
+  border: solid 2px var(--title-text-color);
+  border-radius: 2px;
+  transform: translateY(-50%);
+  transition: background-color var(--animation-type);
 }
 .modal-form-checkbox:hover::before {
   fill: var(--accent-color);
