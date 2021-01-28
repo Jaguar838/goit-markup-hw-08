@@ -935,13 +935,11 @@ ul {
   transition: background-color var(--animation-type);
 }
 .modal-form-checkbox:hover::before {
-  fill: var(--accent-color);
-  border: solid 2px var(--title-text-color);
+  border: solid 2px var(--accent-color);
   border-radius: 2px;
 }
 .old-checkbox:focus + .modal-form-checkbox::before {
-  fill: var(--accent-color);
-  border: solid 2px var(--title-text-color);
+  border: solid 2px var(--accent-color);
   border-radius: 2px;
 }
 .old-checkbox:checked + .modal-form-checkbox::before {
