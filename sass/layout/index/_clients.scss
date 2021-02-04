@@ -1,0 +1,34 @@
+/* Clients */
+.section-client {
+  padding: 94px 0;
+  background-color: getColor('main-bg');
+}
+
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-link {
+  @include centeredFlex(inline-flex);
+
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid getColor('icon');
+  border-radius: 4px;
+
+  color: getColor('icon');
+
+  @include transition(border-color, color);
+}
+
+.client-logo {
+  fill: currentColor;
+}
+
+.client-link:focus,
+.client-link:hover {
+  color: getColor('accent');
+  border-color: getColor('accent');
+}
