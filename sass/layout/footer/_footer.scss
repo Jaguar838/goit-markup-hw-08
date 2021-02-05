@@ -46,7 +46,7 @@
   
     color: rgba(255, 255, 255, 0.6);
   
-    @include transition(color);
+    @include transition();
   }
   .footer-contact:focus,
   .footer-contact:hover {

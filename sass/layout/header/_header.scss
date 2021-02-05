@@ -91,7 +91,7 @@
   
   .nav-link,
   .header-contact {
-    @include transition(color);
+    @include transition();
   }
   
   /* Current link  */
