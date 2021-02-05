@@ -40,4 +40,10 @@
   box-shadow: $shadow-btn;
 
   @include transition(background-color);
+
+  &:focus,
+  &:hover {
+  background-color: getColor('active-btn');
+  }
 }
+

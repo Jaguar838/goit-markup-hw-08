@@ -47,11 +47,13 @@
     color: rgba(255, 255, 255, 0.6);
   
     @include transition();
+
+    &:focus,
+    &:hover {
+      color: getColor('accent');
+    }
   }
-  .footer-contact:focus,
-  .footer-contact:hover {
-    color: getColor('accent');
-  }
+
   
   
   .footer-socials {
@@ -77,11 +79,6 @@
   
   .footer-socials .icon {
     fill: currentColor;
-  }
-  
-  .social-link:focus,
-  .social-link:hover {
-    background-color: getColor('accent');
   }
   
   .subscribe-label.footer-title {
@@ -110,29 +107,26 @@
     background-color: getColor('dark-bg');
   
     @include transition(border-color);
-  }
-  
-  .subscribe-input:focus,
-  .subscribe-input:hover {
-    border-color: getColor('accent');
-  }
-  
-  .subscribe-input:placeholder-shown {
-    color: rgba(255, 255, 255, 0.6);
+
+    &:placeholder-shown {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus,
+    &:hover {
+      border-color: getColor('accent');
+    }
   }
   
   .icon-send {
     margin-left: 10px;
-    $size: 24px;
-    width: $size;
-    height: $size;
+    @include size(24px);
     fill: currentColor;
   }
   
   .btn-subscribe {
   @include centeredFlex();
-    width: 200px;
-    height: 50px;
+  @include size(200px,50px);
   
     color: getColor('title');
     background-color: getColor('accent');
@@ -140,12 +134,15 @@
     box-shadow: $shadow-btn;
   
     @include transition(background-color);
+
+    &:focus,
+    &:hover {
+      background-color: getColor('active-btn');
+    }
   }
-  
-  .btn-hero:focus,
-  .btn-subscribe:focus,
-  .btn-hero:hover,
-  .btn-subscribe:hover {
-    background-color: getColor('active-btn');
-  }
+
+
+
+
+
   

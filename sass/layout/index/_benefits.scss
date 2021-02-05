@@ -7,17 +7,18 @@
 
 .plus-item {
   width: calc((1170px - 90px) / 4);
+
+  &:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
 }
 
-.plus-item:not(:nth-child(4n)) {
-  margin-right: 30px;
-}
+
 
 .container-icon {
 @include centeredFlex();
 
-  width: 270px;
-  height: 120px;
+  @include size(270px,120px);
   margin-bottom: 30px;
 
   background-color: getColor('second-bg');

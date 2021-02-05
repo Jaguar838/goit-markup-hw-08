@@ -57,27 +57,7 @@
   margin-right: 10px;
 }
 
-.social-link {
-  @include centeredFlex();
-  flex-shrink: 0;
-
-  width: 44px;
-  height: 44px;
-  border-radius: 44px;
-  color: getColor('icon');
-
-  @include transition(color, background-color);
-}
-
-.icon {
-  width: 20px;
-  height: 20px;
-}
-
 .team-item .icon {
   fill: currentColor;
 }
-.social-link:focus,
-.social-link:hover {
-  color: getColor('title');
-}
+
