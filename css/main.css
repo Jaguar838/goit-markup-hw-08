@@ -275,25 +275,6 @@ ul {
   margin: 0 auto 50px;
 }
 
-/* Hidden element  */
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-/* Header */
-.header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  border-bottom: 1px solid #ececec;
-  background-color: #ffffff;
-}
-
 .header .logo {
   margin-right: 92px;
 }
@@ -313,6 +294,33 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.footer .logo {
+  margin-bottom: 20px;
+}
+
+.footer .logo-studio {
+  color: #ffffff;
+}
+
+/* Hidden element  */
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  border-bottom: 1px solid #ececec;
+  background-color: #ffffff;
 }
 
 .nav-link,
@@ -367,15 +375,19 @@ ul {
   color: #757575;
 }
 
+.header-contact:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-contact:focus, .header-contact:hover {
   color: #2196f3;
 }
 
-.nav-list > .nav-item:not(:last-child),
-.header-contacts > .header-contact:not(:last-child) {
+.nav-item:not(:last-child) {
   margin-right: 50px;
 }
 
+.header-contact
 .header-icon {
   margin-right: 10px;
   fill: currentColor;
@@ -392,11 +404,11 @@ ul {
 }
 
 /* Current link  */
-.current {
+.nav-link--current {
   color: #2196f3;
 }
 
-.current::before {
+.nav-link--current::before {
   position: absolute;
   bottom: 0;
   content: '';
@@ -668,14 +680,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.footer .logo {
-  margin-bottom: 20px;
-}
-
-.footer .logo-studio {
-  color: #ffffff;
 }
 
 .footer-section {

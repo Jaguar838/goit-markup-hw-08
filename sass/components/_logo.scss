@@ -1,0 +1,32 @@
+.header {
+    .logo {
+        margin-right: 92px;
+    }
+    .logo-studio {
+        color: getColor('dark');
+    }
+}
+
+.logo-web {
+  color: getColor('accent');
+}
+
+.logo-link {
+  font-family: $logo-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+
+  text-shadow: 0px 1px 1px rgba(0,0,0,.12), 0px 4px 4px rgba(0,0,0,.06), 1px 4px 6px rgba(0,0,0,.16);
+}
+
+.footer {
+    .logo {
+    margin-bottom: 20px;
+    }
+        .logo-studio {
+        color: getColor('title');
+    }
+}
