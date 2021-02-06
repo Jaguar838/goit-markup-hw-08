@@ -1,0 +1,31 @@
+@mixin paddings ($desktop:94px) {
+  padding-top: $desktop;
+  padding-bottom: $desktop;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin centeredFlex($type:flex) {
+  display: $type;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin centeredElement($left:50%, $shiftX:0) {
+  top: 50%;
+  left: $left;
+  transform: translate($shiftX, -50%);
+} 
+
+@mixin transition(
+  $property1:color, 
+  $property2:null,
+  $property3:null)
+   {
+  transition-delay: 250ms;   
+  transition-property: $property1, $property2, $property3;
+  transition: $animationFunction;
+}

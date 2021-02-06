@@ -1,0 +1,21 @@
+.social-link {
+  @include centeredFlex();
+  flex-shrink: 0;
+
+  @include size(44px);
+  border-radius: 44px;
+  color: getColor('icon');
+
+  @include transition(color, background-color);
+
+  &:focus,
+  &:hover {
+    color: getColor('title');
+    background-color: getColor('accent');
+  }
+}
+
+
+.icon {
+  @include size(20px);
+}

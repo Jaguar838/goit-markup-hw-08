@@ -1,0 +1,139 @@
+/* Footer */
+.footer {
+  @include paddings(60px);
+    background-color: getColor('dark-bg');
+  }
+  
+  .footer {
+    .container {
+    display: flex;
+    }
+  }
+  
+  .footer-section {
+    margin-right: 85px;
+  }
+  
+  .address-link {
+    display: inline-block;
+    margin-bottom: 5px;
+  
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  
+    letter-spacing: 0.03em;
+  
+    color: getColor('title');
+  }
+  
+  .footer-contact {
+    display: block;
+    padding: 4px 0;
+  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+  
+    letter-spacing: 0.02em;
+  
+    color: rgba(255, 255, 255, 0.6);
+  
+    @include transition();
+
+    &:focus,
+    &:hover {
+      color: getColor('accent');
+    }
+  }
+
+  
+  
+  .footer-socials {
+    margin-right: 93px;
+    .social-link {
+      background: rgba(255, 255, 255, 0.1);
+      color: getColor('title');
+    }
+    .icon {
+      fill: currentColor;
+    }
+  }
+  
+  .footer-title {
+    margin: 14px 0 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  
+    letter-spacing: 0.03em;
+  
+    color: getColor('title');
+  }
+  
+  .subscribe-label {
+    display: block;
+  }
+  
+  .subscribe_input_btn-block {
+    display: flex;
+  }
+  
+  .subscribe-input {
+    display: inline-block;
+    width: 358px;
+    margin-right: 12px;
+    padding: 15px 16px;
+  
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: none;
+  
+    color: getColor('title');
+    background-color: getColor('dark-bg');
+  
+    @include transition(border-color);
+
+    &:placeholder-shown {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus,
+    &:hover {
+      border-color: getColor('accent');
+    }
+  }
+  
+  .icon-send {
+    margin-left: 10px;
+    @include size(24px);
+    fill: currentColor;
+  }
+  
+  .btn-subscribe {
+  @include centeredFlex();
+  @include size(200px,50px);
+  
+    color: getColor('title');
+    background-color: getColor('accent');
+  
+    box-shadow: $shadow-btn;
+  
+    @include transition(background-color);
+
+    &:focus,
+    &:hover {
+      background-color: getColor('active-btn');
+    }
+  }
+
+
+
+
+
+  

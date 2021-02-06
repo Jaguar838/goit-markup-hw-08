@@ -1,0 +1,45 @@
+/* Section plus */
+
+.section-plus {
+  @include paddings();
+}
+
+.plus-item {
+  width: calc((1170px - 90px) / 4);
+
+  &:not(:nth-child(4n)) {
+    margin-right: 30px;
+  }
+}
+
+
+
+.container-icon {
+@include centeredFlex();
+
+  @include size(270px,120px);
+  margin-bottom: 30px;
+
+  background-color: getColor('second-bg');
+  border-radius: 4px;
+}
+
+.plus-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  letter-spacing: 0.03em;
+
+  color: getColor('text');
+}
+
+.plus-post {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: getColor('post-text');
+}

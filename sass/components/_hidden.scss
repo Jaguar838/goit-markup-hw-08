@@ -1,0 +1,7 @@
+/* Hidden element  */
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    @include size(1px);
+    margin: -1px;
+  }
