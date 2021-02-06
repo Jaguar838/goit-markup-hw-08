@@ -2,7 +2,7 @@
 
 .portfolio {
     margin-top: 80px;
-    padding: 94px 0;
+    @include paddings();
   }
   
   .filter-list {

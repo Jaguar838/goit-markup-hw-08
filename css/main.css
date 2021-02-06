@@ -415,7 +415,8 @@ ul {
 .hero-overlay {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 200px 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: #c4c4c4;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero.jpg);
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero.jpg);
@@ -545,7 +546,8 @@ ul {
 
 /* Our team  */
 .section-team {
-  padding: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 
@@ -609,7 +611,8 @@ ul {
 
 /* Clients */
 .section-client {
-  padding: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #ffffff;
 }
 
@@ -667,16 +670,16 @@ ul {
   display: flex;
 }
 
-.footer-section {
-  margin-right: 85px;
-}
-
 .footer .logo {
   margin-bottom: 20px;
 }
 
 .footer .logo-studio {
   color: #ffffff;
+}
+
+.footer-section {
+  margin-right: 85px;
 }
 
 .address-link {
@@ -713,6 +716,15 @@ ul {
   margin-right: 93px;
 }
 
+.footer-socials .social-link {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.footer-socials .icon {
+  fill: currentColor;
+}
+
 .footer-title {
   margin: 14px 0 20px;
   font-weight: 700;
@@ -723,16 +735,7 @@ ul {
   color: #ffffff;
 }
 
-.footer-socials .social-link {
-  background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-}
-
-.footer-socials .icon {
-  fill: currentColor;
-}
-
-.subscribe-label.footer-title {
+.subscribe-label {
   display: block;
 }
 
@@ -809,7 +812,8 @@ ul {
 /* Portfolio project */
 .portfolio {
   margin-top: 80px;
-  padding: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .filter-list {

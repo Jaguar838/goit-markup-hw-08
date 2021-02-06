@@ -1,3 +1,8 @@
+@mixin paddings ($desktop:94px) {
+  padding-top: $desktop;
+  padding-bottom: $desktop;
+}
+
 @mixin size($width, $height: $width) {
   width: $width;
   height: $height;

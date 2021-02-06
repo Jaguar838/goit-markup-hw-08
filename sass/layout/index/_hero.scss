@@ -7,7 +7,7 @@
 .hero-overlay {
   max-width: $page-max-width;
   margin: 0 auto;
-  padding: 200px 0;
+  @include paddings(200px);
   background-color: #c4c4c4;
   background-image: linear-gradient(
       to bottom,

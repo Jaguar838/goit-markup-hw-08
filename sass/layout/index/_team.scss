@@ -1,6 +1,6 @@
 /* Our team  */
 .section-team {
-  padding: 94px 0;
+  @include paddings();
   background-color: getColor('second-bg');
 }
 
@@ -53,8 +53,10 @@
   width: 100%;
 }
 
-.social-item:not(:last-child) {
+.social-item {
+  &:not(:last-child) {
   margin-right: 10px;
+  }
 }
 
 .team-item .icon {

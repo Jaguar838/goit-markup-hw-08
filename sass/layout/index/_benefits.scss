@@ -1,8 +1,7 @@
 /* Section plus */
 
 .section-plus {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include paddings();
 }
 
 .plus-item {

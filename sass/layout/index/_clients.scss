@@ -1,6 +1,6 @@
 /* Clients */
 .section-client {
-  padding: 94px 0;
+  @include paddings();
   background-color: getColor('main-bg');
 }
 
