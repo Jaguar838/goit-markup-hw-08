@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/min/main.min.css" />
+    <style>
+      .icon-burger-menu {
+        padding: 0;
+        width: 24px;
+        height: 16px;
+        background-color: white;
+      }
+    </style>
   </head>
   <body>
     <!-- WebStudio -->
@@ -15,8 +23,8 @@
           <div class="logo">
             <a class="logo-link" href="./index.html">
               <span class="logo-web">Web</span
-              ><span class="logo-studio">Studio</span></a
-            >
+              ><span class="logo-studio">Studio</span>
+              </a>
           </div>
           <ul class="nav-list center">
             <li class="nav-item">
@@ -29,14 +37,19 @@
               <a class="nav-link" href="#contacts">Контакты</a>
             </li>
           </ul>
+          <button class="btn-burger-menu" >
+            <svg class="icon-burger-menu">
+              <use href="./images/icons-min.svg#burger-menu"></use>
+            </svg>
+          </button>
         </nav>
         <div class="header-contacts center">
           <a class="header-contact center" href="mailto:info@devstudio.com">
             <svg class="header-icon" width="16" height="12">
               <use href="./images/icons-min.svg#envelope"></use>
             </svg>
-            info@devstudio.com</a
-          >
+            info@devstudio.com
+          </a>
           <a class="header-contact center" href="tel:+380961111111">
             <svg class="header-icon" width="10" height="16">
               <use href="./images/icons-min.svg#smartphone"></use>
@@ -121,7 +134,14 @@
           <ul class="services-list center">
             <li class="services-item">
               <img
-                src="./images/img-1.jpg"
+              src="./images/services/jpg/img-1.jpg" 
+              srcset="
+              ./images/services/webp/img-1.webp 1x,
+              ./images/services/webp/img-1@2x.webp 2x,
+              ./images/services/webp/img-1@3x.webp 3x,
+              ./images/services/jpg/img-1@2x.jpg 2x,
+              ./images/services/jpg/img-1@3x.jpg 3x
+              "
                 alt="человек за ноутбуком занимается веб разработкой"
               />
               <div class="services-div">
@@ -130,7 +150,14 @@
             </li>
             <li class="services-item">
               <img
-                src="./images/img-2.jpg"
+              src="./images/services/jpg/img-2.jpg" 
+              srcset="
+              ./images/services/webp/img-2.webp 1x,
+              ./images/services/webp/img-2@2x.webp 2x,
+              ./images/services/webp/img-2@3x.webp 3x,
+              ./images/services/jpg/img-2@2x.jpg 2x,
+              ./images/services/jpg/img-2@3x.jpg 3x
+              "
                 alt="человек за ноутбуком занимается мобильной веб разработкой"
               />
               <div class="services-div">
@@ -139,7 +166,14 @@
             </li>
             <li class="services-item">
               <img
-                src="./images/img-3.jpg"
+              src="./images/services/jpg/img-3.jpg" 
+              srcset="
+              ./images/services/webp/img-3.webp 1x,
+              ./images/services/webp/img-3@2x.webp 2x,
+              ./images/services/webp/img-3@3x.webp 3x,
+              ./images/services/jpg/img-3@2x.jpg 2x,
+              ./images/services/jpg/img-3@3x.jpg 3x
+              "
                 alt="человек за планшетом подбирает цветовую схему для дезайнерского решения"
               />
               <div class="services-div">
@@ -155,11 +189,41 @@
           <h2 class="section-heading">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img
-                src="./images/foto-1.jpg"
-                width="270"
-                alt="молодой мужчина в коричневой рубашке и очках"
-              />
+              <picture>
+                <source 
+                srcset="
+                ./images/team/webp/foto-1__m.webp 1x,
+                ./images/team/webp/foto-1__m@2x.webp 2x,
+                ./images/team/webp/foto-1__m@3x.webp 3x,
+                ./images/team/jpg/foto-1__m.jpg 1x,
+                ./images/team/jpg/foto-1__m@2x.jpg 2x,
+                ./images/team/jpg/foto-1__m@3x.jpg 3x
+                "
+                media="(max-width: 767px)"
+                type="image/webp"
+                >
+                <source 
+                srcset="
+                ./images/team/webp/foto-1__t.webp 1x,
+                ./images/team/webp/foto-1__t@2x.webp 2x,
+                ./images/team/webp/foto-1__t@3x.webp 3x,
+                ./images/team/jpg/foto-1__t.jpg 1x,
+                ./images/team/jpg/foto-1__t@2x.jpg 2x,
+                ./images/team/jpg/foto-1__t@3x.jpg 3x
+                "
+                media="(min-width: 768px) and (max-width: 1199px)" type="image/webp">
+                <source 
+                srcset="
+                ./images/team/webp/foto-1__d.webp,
+                ./images/team/jpg/foto-1__d.jpg,
+                "
+                media="(min-width: 1200px)" type="image/webp">
+                <img 
+                class="team__photo" 
+                src="./images/team/jpg/foto-1__t.jpg"
+                alt="молодой мужчина в коричневой рубашке и очках" 
+                >
+            </picture>
               <h3 class="team-title">Игорь Демьяненко</h3>
               <p class="team-post" lang="en">Product Designer</p>
               <ul class="social-list">
@@ -194,11 +258,41 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
-                src="./images/foto-2.jpg"
-                width="270"
-                alt="молодая девушка со светлыми волосами в очках"
-              />
+              <picture>
+                <source 
+                srcset="
+                ./images/team/webp/foto-2__m.webp 1x,
+                ./images/team/webp/foto-2__m@2x.webp 2x,
+                ./images/team/webp/foto-2__m@3x.webp 3x,
+                ./images/team/jpg/foto-2__m.jpg 1x,
+                ./images/team/jpg/foto-2__m@2x.jpg 2x,
+                ./images/team/jpg/foto-2__m@3x.jpg 3x
+                "
+                media="(max-width: 767px)"
+                type="image/webp"
+                >
+                <source 
+                srcset="
+                ./images/team/webp/foto-2__t.webp 1x,
+                ./images/team/webp/foto-2__t@2x.webp 2x,
+                ./images/team/webp/foto-2__t@3x.webp 3x,
+                ./images/team/jpg/foto-2__t.jpg 1x,
+                ./images/team/jpg/foto-2__t@2x.jpg 2x,
+                ./images/team/jpg/foto-2__t@3x.jpg 3x
+                "
+                media="(min-width: 768px) and (max-width: 1199px)" type="image/webp">
+                <source 
+                srcset="
+                ./images/team/webp/foto-2__d.webp,
+                ./images/team/jpg/foto-2__d.jpg,
+                "
+                media="(min-width: 1200px)" type="image/webp">
+                <img 
+                class="team__photo" 
+                src="./images/team/jpg/foto-2__t.jpg"
+                alt="молодая девушка со светлыми волосами в очках" 
+                >
+            </picture>
               <h3 class="team-title">Ольга Репина</h3>
               <p class="team-post" lang="en">Frontend Developer</p>
               <ul class="social-list">
@@ -233,11 +327,41 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
-                src="./images/foto-3.jpg"
-                width="270"
+              <picture>
+                <source 
+                srcset="
+                ./images/team/webp/foto-3__m.webp 1x,
+                ./images/team/webp/foto-3__m@2x.webp 2x,
+                ./images/team/webp/foto-3__m@3x.webp 3x,
+                ./images/team/jpg/foto-3__m.jpg 1x,
+                ./images/team/jpg/foto-3__m@2x.jpg 2x,
+                ./images/team/jpg/foto-3__m@3x.jpg 3x
+                "
+                media="(max-width: 767px)"
+                type="image/webp"
+                >
+                <source 
+                srcset="
+                ./images/team/webp/foto-3__t.webp 1x,
+                ./images/team/webp/foto-3__t@2x.webp 2x,
+                ./images/team/webp/foto-3__t@3x.webp 3x,
+                ./images/team/jpg/foto-3__t.jpg 1x,
+                ./images/team/jpg/foto-3__t@2x.jpg 2x,
+                ./images/team/jpg/foto-3__t@3x.jpg 3x
+                "
+                media="(min-width: 768px) and (max-width: 1199px)" type="image/webp">
+                <source 
+                srcset="
+                ./images/team/webp/foto-3__d.webp,
+                ./images/team/jpg/foto-3__d.jpg,
+                "
+                media="(min-width: 1200px)" type="image/webp">
+                <img 
+                class="team__photo" 
+                src="./images/team/jpg/foto-3__t.jpg"
                 alt="молодой мужчина в светлой рубашке"
-              />
+                >
+            </picture>
               <h3 class="team-title">Николай Тарасов</h3>
               <p class="team-post" lang="en">Marketing</p>
               <ul class="social-list">
@@ -272,11 +396,41 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
-                src="./images/foto-4.jpg"
-                width="270"
+              <picture>
+                <source 
+                srcset="
+                ./images/team/webp/foto-4__m.webp 1x,
+                ./images/team/webp/foto-4__m@2x.webp 2x,
+                ./images/team/webp/foto-4__m@3x.webp 3x,
+                ./images/team/jpg/foto-4__m.jpg 1x,
+                ./images/team/jpg/foto-4__m@2x.jpg 2x,
+                ./images/team/jpg/foto-4__m@3x.jpg 3x
+                "
+                media="(max-width: 767px)"
+                type="image/webp"
+                >
+                <source 
+                srcset="
+                ./images/team/webp/foto-4__t.webp 1x,
+                ./images/team/webp/foto-4__t@2x.webp 2x,
+                ./images/team/webp/foto-4__t@3x.webp 3x,
+                ./images/team/jpg/foto-4__t.jpg 1x,
+                ./images/team/jpg/foto-4__t@2x.jpg 2x,
+                ./images/team/jpg/foto-4__t@3x.jpg 3x
+                "
+                media="(min-width: 768px) and (max-width: 1199px)" type="image/webp">
+                <source 
+                srcset="
+                ./images/team/webp/foto-4__d.webp,
+                ./images/team/jpg/foto-4__d.jpg,
+                "
+                media="(min-width: 1200px)" type="image/webp">
+                <img 
+                class="team__photo" 
+                src="./images/team/jpg/foto-4__t.jpg"
                 alt="молодой мужчина в черной футболке и очках"
-              />
+                >
+            </picture>
               <h3 class="team-title">Михаил Ермаков</h3>
               <p class="team-post" lang="en">UI Designer</p>
               <ul class="social-list">
