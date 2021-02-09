@@ -1,5 +1,8 @@
 /* Section services */
 .section-services {
+  @media not screen and (min-width: $desktop) {
+    display: none;
+  }
   padding-bottom: 94px;
 }
 
