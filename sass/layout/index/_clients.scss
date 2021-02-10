@@ -1,6 +1,9 @@
 /* Clients */
 .section-client {
+  @include paddings(60px);
+  @media screen and (min-width: $desktop) {
   @include paddings();
+  }
   background-color: getColor('main-bg');
 }
 
