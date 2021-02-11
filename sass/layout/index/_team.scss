@@ -19,7 +19,7 @@
 }
 
 .team-item {
-  width: 270px;
+  width: 100%;
   padding-bottom: 30px;
 
   background-color: getColor('main-bg');
@@ -54,7 +54,7 @@
 }
 
 .team-photo {
-  width: 450px;
+  // width: 450px;
   margin-bottom: 30px;
 
   @media screen and (min-width: $tablet) {
@@ -64,6 +64,11 @@
   @media screen and (min-width: $desktop) {
     width: 270px;
   }
+}
+
+.team__card {
+  width: 100%;
+  padding: 30px 24px 24px;
 }
 
 .team-title {

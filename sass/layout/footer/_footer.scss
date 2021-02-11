@@ -7,6 +7,17 @@
   .footer {
     .container {
     display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: baseline;
+    @media screen and (min-width: $desktop) {
+        flex-wrap: unset;
+        justify-content: space-between;
+        }
+      }
     }
   }
   

@@ -38,8 +38,7 @@
 
 
 .container-icon {
-@include centeredFlex();
-// 270px
+  @include centeredFlex();
   @include size(100%,120px);
   margin-bottom: 30px;
 
