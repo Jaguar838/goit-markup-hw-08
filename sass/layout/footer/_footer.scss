@@ -122,6 +122,9 @@
   .subscribe-label {
     display: block;
     text-align: center;
+    @media screen and (min-width: $desktop) {
+    text-align: left;
+    }
   }
   
   .subscribe-form__container {
