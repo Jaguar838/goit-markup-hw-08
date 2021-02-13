@@ -55,15 +55,18 @@
 }
 
 .nav-list {
+  @media screen and (max-width: $max-mobile) {
+    margin-bottom: auto;
+  }
   @media screen and (min-width: $tablet) {
     display: flex;
   }
 }
 
 .nav-item {
-  &:last-child {
+  &:not(:last-child) {
     @media screen and (max-width: $max-mobile) {
-      margin-bottom: auto;
+      margin-bottom: 32px;
     }
   }
 
@@ -162,7 +165,7 @@
       }
 
       @media screen and (max-width: $max-responsive) {
-        font-size: calc(12px + (24 - 12) * (100vw - 300px) / (480 - 300));
+        font-size: calc(24px + (24 - 12) * (100vw - 300px) / (480 - 300));
       }
     }  
     &:focus,
@@ -217,7 +220,7 @@
 }
 .mobile__link { 
 font-weight: 500;
-font-size: 18px;
+font-size: calc(9px + (18 - 9) * ((100vw - 300px) / (480 - 300)));
 line-height: 1.22px;
 
 letter-spacing: 0.02em;
