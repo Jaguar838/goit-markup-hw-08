@@ -29,3 +29,12 @@
   transition-property: $property1, $property2, $property3;
   transition: $animationFunction;
 }
+
+@mixin heroBgImage($url) {
+  background-image: linear-gradient(
+      to right,
+      getColor('overlayShadingColor'),
+      getColor('overlayShadingColor')
+    ),
+    url(#{$url});
+}

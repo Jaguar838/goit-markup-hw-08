@@ -14,6 +14,8 @@ $color: (
   'second-bg': #f5f4fa,
   // Button active color
   'active-btn': #188ce8,
+  //Hero overlay
+  'overlayShadingColor': rgba(47, 48, 58, 0.4)
 );
 
 @function getColor($key) {

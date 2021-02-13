@@ -5,60 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/min/main.min.css" />
-    <style>
-      .icon-burger-menu {
-        padding: 0;
-        width: 40px;
-        height: 40px;
-        background-color: white;
-      }
-    </style>
   </head>
   <body>
     <!-- WebStudio -->
-    <!-- <header class="header">
-      <div class="container center">
-        <nav class="center">
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
           <div class="logo">
             <a class="logo-link" href="./index.html">
               <span class="logo-web">Web</span
               ><span class="logo-studio">Studio</span>
               </a>
           </div>
-          <button class="btn-burger-menu">
-            <svg class="icon-burger-menu">
-              <use href="./images/icons-min.svg#burger-menu"></use>
+          <button
+          type="button"
+          class="menu-btn"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+          >
+            <svg  width="40" height="40"
+            class="mobile-icons__menu">
+              <use href="./images/icons-min.svg#burger-menu"
+              class="icon__btn-burger"
+              ></use>
+              <use href="./images/icons-min.svg#close-menu"
+              class="icon__btn-close"
+              ></use>
             </svg>
           </button>
-          <ul class="nav-list center">
-            <li class="nav-item">
-              <a class="nav-link nav-link--current" href="index.html">Студия</a>
+
+          <div class="menu__mobile-wrapper" id="menu-container" data-menu>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link nav-link--current" href="index.html">Студия</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Портфолио</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+
+          
+          <div class="header-contacts">
+            <a class="header-contact center header-contact--tel" href="tel:+380961111111">
+              <svg class="header-icon" width="10" height="16">
+                <use href="./images/icons-min.svg#smartphone"></use>
+              </svg>+38 096 111 11 11</a>
+            <a class="header-contact center" href="mailto:info@devstudio.com">
+              <svg class="header-icon" width="16" height="12">
+                <use href="./images/icons-min.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a>
+          </div>              
+       
+          <ul class="mobile__list">
+            <li class="mobile__item">
+                <a class="mobile__link" href="#">Instagram</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Портфолио</a>
+            <li class="mobile__item">
+                <a class="mobile__link" href="#">Twitter</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacts">Контакты</a>
+            <li class="mobile__item">
+                <a class="mobile__link" href="#">Facebook</a>
+            </li>
+            <li class="mobile__item">
+                <a class="mobile__link" href="#">LinkedIn</a>
             </li>
           </ul>
-          
+          </div>
         </nav>
-        <div class="header-contacts center">
-          <a class="header-contact center" href="mailto:info@devstudio.com">
-            <svg class="header-icon" width="16" height="12">
-              <use href="./images/icons-min.svg#envelope"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-          <a class="header-contact center" href="tel:+380961111111">
-            <svg class="header-icon" width="10" height="16">
-              <use href="./images/icons-min.svg#smartphone"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
-        </div>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- Hero -->
@@ -684,6 +704,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
 <!-- End WebStudio -->
