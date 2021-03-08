@@ -8,6 +8,10 @@ $shadow-btn: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 $animationFunction: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+$transitionTime: 250ms;
+
+$cubicBezierMain: cubic-bezier(0.4, 0, 0.2, 1);
+
 // Breakpoints
 
 $mobile: 480px;
@@ -16,3 +20,6 @@ $desktop: 1200px;
 $max-tablet: $desktop - 1px;
 $max-mobile: $tablet - 1px;
 $max-responsive: $mobile - 1px;
+
+$phone: $mobile;
+$max-phone: $tablet - 1px;

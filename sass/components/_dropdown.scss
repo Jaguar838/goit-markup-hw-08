@@ -14,7 +14,7 @@
     @include size(100%);
     background: rgba(0, 0, 0, 0.2);
   
-    @include transition(opacity, transform);
+    @include transitionMain(opacity, transform);
   }
   
   .modal {
